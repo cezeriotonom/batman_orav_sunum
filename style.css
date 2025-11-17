@@ -159,8 +159,8 @@ section.active .animated-text {
 .logo-image {
     height: 200px;
     margin-bottom: 30px;
-    /* This attempts to make the white background transparent. It may darken the logo's own colors slightly. */
-    mix-blend-mode: multiply;
+    border-radius: 50%;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.15), inset 0 0 25px rgba(255, 255, 255, 0.1);
 }
 
 /* Stagger the animation for a more elegant effect */
