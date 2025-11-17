@@ -269,3 +269,63 @@ Sütun 1: Bir büyüteç ikonu ve altında 'Aradığını Bulamamak' yazısı.
 Sütun 2: Bir fiyat etiketi ikonu ve altında 'Pahalı Çözümler' yazısı.
 Sütun 3: Bir 'eski' veya 'demode' damgası ikonu ve altında 'Yetersiz İçerikler' yazısı."
 
+[2025-11-17 11:44:42] [USER_CHECKPOINT]
+abb40e891568aa40cc3adfa392ae185b94d092d3
+"İkinci slaytı tasarla. Başlığı 'Keşke şöyle bir materyalim olsaydı...' olsun. Başlığın altında, yan yana üç sütun oluştur. Her sütunda bir ikon ve altında kısa bir metin olsun:
+Sütun 1: Bir büyüteç ikonu ve altında 'Aradığını Bulamamak' yazısı.
+Sütun 2: Bir fiyat etiketi ikonu ve altında 'Pahalı Çözümler' yazısı.
+Sütun 3: Bir 'eski' veya 'demode' damgası ikonu ve altında 'Yetersiz İçerikler' yazısı."
+
+[2025-11-17 11:45:47] [USER]
+Prompt 5: Slayt 3 - Biz Kimiz?
+"Üçüncü slayt, 'Biz Kimiz?' başlığını taşısın. Başlığın altında, ekibimizin samimiyetini yansıtacak şekilde, yan yana üç adet yuvarlak çerçeveli profil fotoğrafı için yer tutucu (placeholder) oluştur. Altlarına isimlerimiz için metin alanları ekle. En altta ise italik ve tırnak içinde misyon cümlemiz yer alsın: 'Türkiye'nin öğretmenlerini teknoloji tüketicisinden, teknoloji üreticisine dönüştürme hayaliyle yola çıktık.'"
+Prompt 6: Slayt 4 - Çözüm: Symdev
+"Dördüncü slayt çok net ve güçlü olmalı.
+Ekranda sadece büyük bir şekilde 'Çözüm: Symdev' yazsın.
+Hemen altında sloganımız: 'Siz Hayal Edin, O Yapsın.'
+'Symdev' kelimesi, markamızın renginde ve hafifçe parlayan bir efektle vurgulansın."
+Prompt 7: Slayt 5 - Canlı Demo Geçişi
+"Beşinci slayt, atölyenin en heyecanlı anına geçişi sağlamalı.
+Ekranda büyük bir şekilde 'Canlı Demo Zamanı!' yazsın.
+Yazının yanında veya üstünde sihirli bir değnek veya roket gibi dikkat çekici bir ikon olsun. Bu slayt, bizim canlı demoya başlayacağımız bir ara ekran olacak."
+Prompt 8: Slayt 6 - Ekosistem Vizyonu
+"Altıncı slayt, Symdev Store vizyonumuzu anlatsın. Başlığı 'Bir Araçtan Daha Fazlası: Bir Ekosistem' olsun. Başlığın altında, basit bir infografik oluştur:
+Ortada büyük bir 'Symdev Store' kutusu.
+Bu kutuya giren üç ok: 'Öğretmenler Üretiyor', 'Öğretmenler Paylaşıyor', 'Öğretmenler Keşfediyor'.
+Kutudan çıkan bir ok: 'Öğretmenler Kazanıyor'."
+Prompt 9: Slayt 7 ve 8 - Kapanış ve Büyük Final
+"Son iki slaytı hazırlayalım:
+Slayt 7 (Davet): Ekranda 'Bu Vizyonun Bir Parçası Olun' başlığı olsun. Ortada, ankete yönlendirecek büyük bir QR kod için yer tutucu bulunsun.
+Slayt 8 (Final): Bu son slayt, en etkileyici an için. Ekranda sadece Symdev logosu ve altında şu cümle yer alsın: 'Bu sunum, Symdev ile üretilmiştir.' Bu cümlenin harf harf, yazılıyormuş gibi bir animasyonla gelmesini sağla."
+
+[2025-11-17 11:47:02] [LLM_SUMMARY]
+Anlaşıldı. Sunumun geri kalan 6 slaytını (Biz Kimiz?, Çözüm, Canlı Demo, Ekosistem, Davet ve Final) tek adımda oluşturuyorum. Gerekli tüm HTML yapılarını, CSS stillerini ve son slayt için özel daktilo animasyonunu ekleyeceğim.
+
+[2025-11-17 11:47:02] [USER]
+Prompt 5: Slayt 3 - Biz Kimiz?
+"Üçüncü slayt, 'Biz Kimiz?' başlığını taşısın. Başlığın altında, ekibimizin samimiyetini yansıtacak şekilde, yan yana üç adet yuvarlak çerçeveli profil fotoğrafı için yer tutucu (placeholder) oluştur. Altlarına isimlerimiz için metin alanları ekle. En altta ise italik ve tırnak içinde misyon cümlemiz yer alsın: 'Türkiye'nin öğretmenlerini teknoloji tüketicisinden, teknoloji üreticisine dönüştürme hayaliyle yola çıktık.'"
+Prompt 6: Slayt 4 - Çözüm: Symdev
+"Dördüncü slayt çok net ve güçlü olmalı.
+Ekranda sadece büyük bir şekilde 'Çözüm: Symdev' yazsın.
+Hemen altında sloganımız: 'Siz Hayal Edin, O Yapsın.'
+'Symdev' kelimesi, markamızın renginde ve hafifçe parlayan bir efektle vurgulansın."
+Prompt 7: Slayt 5 - Canlı Demo Geçişi
+"Beşinci slayt, atölyenin en heyecanlı anına geçişi sağlamalı.
+Ekranda büyük bir şekilde 'Canlı Demo Zamanı!' yazsın.
+Yazının yanında veya üstünde sihirli bir değnek veya roket gibi dikkat çekici bir ikon olsun. Bu slayt, bizim canlı demoya başlayacağımız bir ara ekran olacak."
+Prompt 8: Slayt 6 - Ekosistem Vizyonu
+"Altıncı slayt, Symdev Store vizyonumuzu anlatsın. Başlığı 'Bir Araçtan Daha Fazlası: Bir Ekosistem' olsun. Başlığın altında, basit bir infografik oluştur:
+Ortada büyük bir 'Symdev Store' kutusu.
+Bu kutuya giren üç ok: 'Öğretmenler Üretiyor', 'Öğretmenler Paylaşıyor', 'Öğretmenler Keşfediyor'.
+Kutudan çıkan bir ok: 'Öğretmenler Kazanıyor'."
+Prompt 9: Slayt 7 ve 8 - Kapanış ve Büyük Final
+"Son iki slaytı hazırlayalım:
+Slayt 7 (Davet): Ekranda 'Bu Vizyonun Bir Parçası Olun' başlığı olsun. Ortada, ankete yönlendirecek büyük bir QR kod için yer tutucu bulunsun.
+Slayt 8 (Final): Bu son slayt, en etkileyici an için. Ekranda sadece Symdev logosu ve altında şu cümle yer alsın: 'Bu sunum, Symdev ile üretilmiştir.' Bu cümlenin harf harf, yazılıyormuş gibi bir animasyonla gelmesini sağla."
+
+[2025-11-17 11:53:00] [USER]
+Biz Kimiz sayfasında 3 tane yukarıda 2 tane de aşağıda isimler olacak. İsimler, Prof. Dr. Musa Ataş, Prof. Dr. Veysi İşler, Arş. Gör. Muhammed Said Ataş aşğıdakilere Menal Aslan, Berkkan Kaya yazılacak. resimlerini de az sonra ana klasörün altına atacağım. pict_1.png, pct_2.png ... pict_5.png diye dosyaalr oalcak. sen şimdiden o dosyaların isismlerini yaz. Ben zaten dosyaları yapıp koyacağım oraya
+
+[2025-11-17 11:53:52] [LLM_SUMMARY]
+Anlaşıldı. 'Biz Kimiz?' slaytını 3+2'lik yeni yerleşim düzenine göre güncelliyorum. Belirttiğiniz isimleri ve resim dosyası yollarını (`pict_1.png` vb.) ekleyerek, dosyaları yüklediğinizde her şeyin hazır olmasını sağlıyorum.
+

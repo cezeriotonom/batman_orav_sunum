@@ -204,13 +204,131 @@ section.active .animated-text:nth-child(4) { /* third column */
     animation-delay: 0.7s;
 }
 
-/* Specific delays for the columns inside their container */
-section.active .columns-container .column:nth-child(1) {
-    animation-delay: 0.4s;
+/* --- Slide 3: Biz Kimiz? --- */
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
 }
-section.active .columns-container .column:nth-child(2) {
-    animation-delay: 0.6s;
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-section.active .columns-container .column:nth-child(3) {
-    animation-delay: 0.8s;
+.photo-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(204, 214, 246, 0.1);
+    border: 2px dashed rgba(204, 214, 246, 0.5);
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
+.mission-statement {
+    font-style: italic;
+    margin-top: 50px;
+    font-size: 1.6vw;
+    color: #ccd6f6;
+}
+
+/* --- Slide 4: Çözüm --- */
+.brand-highlight {
+    color: #64ffda;
+    text-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+}
+.slogan {
+    margin-top: 20px !important;
+}
+
+/* --- Slide 5: Canlı Demo --- */
+.demo-icon {
+    font-size: 8vw;
+    color: #64ffda;
+    margin-bottom: 20px;
+}
+
+/* --- Slide 6: Ekosistem --- */
+.infographic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    gap: 20px;
+}
+.infographic-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.info-box {
+    border: 1px solid #ccd6f6;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.2vw;
+}
+.info-box.success {
+    background-color: #64ffda;
+    color: #0a192f;
+    border-color: #64ffda;
+    font-weight: bold;
+}
+.store-box {
+    padding: 50px;
+    border: 2px solid #64ffda;
+    border-radius: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.infographic-arrow {
+    font-size: 3vw;
+}
+
+/* --- Slide 7: Davet --- */
+.qr-placeholder {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a192f;
+    font-size: 150px;
+}
+
+/* --- Slide 8: Final --- */
+.final-slide { background-color: transparent; border: none; backdrop-filter: none; }
+.final-logo { font-size: 8vw; }
+.typing-animation {
+    font-size: 2vw;
+    color: #ccd6f6;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #64ffda; /* The cursor */
+    width: 0;
+}
+section.active .typing-animation {
+    animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite;
+    animation-delay: 1s;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #64ffda; }
+}
+
+/* --- General Animation Delays Update --- */
+section.active .animated-text:nth-child(1) { animation-delay: 0.2s; }
+section.active .animated-text:nth-child(2) { animation-delay: 0.5s; }
+section.active .animated-text:nth-child(3) { animation-delay: 0.8s; }
+section.active .animated-text:nth-child(4) { animation-delay: 1.1s; }
+section.active .team-container .animated-text:nth-child(1) { animation-delay: 0.5s; }
+section.active .team-container .animated-text:nth-child(2) { animation-delay: 0.7s; }
+section.active .team-container .animated-text:nth-child(3) { animation-delay: 0.9s; }
