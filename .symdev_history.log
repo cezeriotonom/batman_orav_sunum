@@ -130,3 +130,14 @@ Elbette, simetri sorununu düzelten ve okları mükemmel şekilde ortalayan kodu
 a70f1f88e8caddd8a1e97c9b5955ba349004f339
 tekrar gönder gelmedi
 
+[2025-11-17 11:12:30] [USER_CHECKPOINT]
+ade2832f5148306d9c208b20e71819e7f919cae7
+tekrar gönder gelmedi
+
+[2025-11-17 11:13:15] [USER]
+Arka Plan: Projenin arka planına, birbiriyle ince çizgilerle bağlanan, yavaşça hareket eden, soluk gümüş rengi (#c0c0c0) noktacıklardan oluşan bir animasyon ekle. Bu animasyon, slayt içeriğinin önüne geçmemeli, zarif ve arka planda kalmalı.
+Tipografi: Projedeki tüm metinler için Google Fonts'tan 'Poppins' fontunu kullan. Ana başlıklar (h1) için 5vw (ekran genişliğinin %5'i), alt başlıklar (h2) için 3vw boyutunda, beyaz renkte (#FFFFFF) ve hafif bir text-shadow ile belirgin olsun. Normal metinler (p) için 1.5vw boyutunda ve biraz daha kırık bir beyaz (#E0E0E0) kullan."
+
+[2025-11-17 11:14:02] [LLM_SUMMARY]
+İsteğiniz doğrultusunda, projeye hareketli bir parçacık animasyonu arka planı ekliyor ve tipografiyi Google'ın 'Poppins' fontu ile modernleştiriyorum. Gerekli HTML, CSS ve JavaScript güncellemelerini yapacağım.
+
