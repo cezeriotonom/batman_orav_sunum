@@ -71,7 +71,7 @@ h1 {
 
 #prev-arrow {
     left: 50%;
-    transform: translateX(-100% - 50px); /* Increased gap */
+    transform: translateX(-100% - 150px); /* Much larger gap */
 }
 
 #prev-arrow:hover {
@@ -84,7 +84,7 @@ h1 {
 
 #next-arrow {
     left: 50%;
-    transform: translateX(50px); /* Increased gap */
+    transform: translateX(150px); /* Much larger gap */
 }
 
 #next-arrow:hover {
@@ -97,18 +97,18 @@ h1 {
 
 @keyframes breath-prev {
     0%, 100% {
-        transform: translateX(-100% - 50px) scale(1);
+        transform: translateX(-100% - 150px) scale(1);
     }
     50% {
-        transform: translateX(-100% - 50px) scale(1.15);
+        transform: translateX(-100% - 150px) scale(1.15);
     }
 }
 
 @keyframes breath-next {
     0%, 100% {
-        transform: translateX(50px) scale(1);
+        transform: translateX(150px) scale(1);
     }
     50% {
-        transform: translateX(50px) scale(1.15);
+        transform: translateX(150px) scale(1.15);
     }
 }
