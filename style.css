@@ -290,33 +290,54 @@ section.active .animated-text:nth-child(4) { /* third column */
 
 /* --- Slide 7: Davet --- */
 .qr-placeholder {
-    width: 250px;
-    height: 250px;
+    width: 350px; /* Increased size */
+    height: 350px; /* Increased size */
     background-color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #0a192f;
-    font-size: 150px;
+    font-size: 250px; /* Increased icon size */
 }
 
 /* --- Slide 8: Final --- */
-.final-slide { background-color: transparent; border: none; backdrop-filter: none; }
+.final-slide { background-color: transparent; border: none; backdrop-filter: none; text-align: center; }
 .final-logo { font-size: 8vw; }
 .typing-animation {
     font-size: 2vw;
     color: #ccd6f6;
-    margin-top: 20px;
+    margin: 15px auto 0 auto;
     overflow: hidden;
     white-space: nowrap;
     border-right: .15em solid #64ffda; /* The cursor */
     width: 0;
+    display: inline-block; /* Fix for centering */
 }
-section.active .typing-animation {
-    animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite;
+
+section.active .final-slide .typing-animation:nth-of-type(1) {
+    animation: typing-1 3.5s steps(34, end) forwards, blink-caret .75s step-end infinite;
     animation-delay: 1s;
+}
+section.active .final-slide .typing-animation:nth-of-type(2) {
+    width: 0; /* Reset for animation */
+    animation: typing-2 3s steps(29, end) forwards, blink-caret .75s step-end infinite;
+    animation-delay: 5s; /* After first line finishes */
+}
+section.active .final-slide .typing-animation:nth-of-type(3) {
+    width: 0; /* Reset for animation */
+    animation: typing-3 3s steps(29, end) forwards, blink-caret .75s step-end infinite;
+    animation-delay: 8.5s; /* After second line finishes */
+}
+
+@keyframes typing-1 { from { width: 0 } to { width: 34ch } }
+@keyframes typing-2 { from { width: 0 } to { width: 29ch } }
+@keyframes typing-3 { from { width: 0 } to { width: 29ch } }
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #64ffda; }
 }
 
 @keyframes typing {
