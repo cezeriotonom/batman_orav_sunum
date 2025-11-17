@@ -156,7 +156,19 @@ section.active .animated-text {
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.logo-image {
+    height: 200px;
+    margin-bottom: 30px;
+    /* This attempts to make the white background transparent. It may darken the logo's own colors slightly. */
+    mix-blend-mode: multiply;
+}
+
 /* Stagger the animation for a more elegant effect */
-section.active .animated-text:nth-child(2) {
+/* Logo (1st child) gets 0s delay by default */
+section.active .animated-text:nth-child(2) { /* H1 */
     animation-delay: 0.3s;
+}
+
+section.active .animated-text:nth-child(3) { /* H2 */
+    animation-delay: 0.6s;
 }
