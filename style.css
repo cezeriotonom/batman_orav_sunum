@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: bold;
+    background: linear-gradient(to right, #007bff, #28a745, #007bff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-flow 5s linear infinite;
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
