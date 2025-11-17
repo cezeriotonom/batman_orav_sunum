@@ -35,16 +35,24 @@ h1 {
     font-size: 4rem;
 }
 
-.nav-arrow {
+.nav-container {
     position: fixed;
     bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 200px; /* Controls space between arrows */
+    z-index: 100;
+}
+
+.nav-arrow {
+    position: relative;
     width: 50px;
     height: 50px;
     background: transparent;
     border: 2px solid rgba(204, 214, 246, 0.5);
     border-radius: 50%;
     cursor: pointer;
-    z-index: 100;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     display: flex;
     justify-content: center;
@@ -54,6 +62,7 @@ h1 {
 .nav-arrow:hover {
     border-color: rgba(204, 214, 246, 1);
     background-color: rgba(204, 214, 246, 0.1);
+    animation: breath 1.8s infinite ease-in-out;
 }
 
 .nav-arrow::before {
@@ -69,46 +78,19 @@ h1 {
     border-color: rgba(204, 214, 246, 1);
 }
 
-#prev-arrow {
-    left: 50%;
-    transform: translateX(-100% - 150px); /* Much larger gap */
-}
-
-#prev-arrow:hover {
-    animation: breath-prev 1.8s infinite ease-in-out;
-}
-
 #prev-arrow::before {
     transform: translateX(2px) rotate(-135deg);
-}
-
-#next-arrow {
-    left: 50%;
-    transform: translateX(150px); /* Much larger gap */
-}
-
-#next-arrow:hover {
-    animation: breath-next 1.8s infinite ease-in-out;
 }
 
 #next-arrow::before {
     transform: translateX(-2px) rotate(45deg);
 }
 
-@keyframes breath-prev {
+@keyframes breath {
     0%, 100% {
-        transform: translateX(-100% - 150px) scale(1);
+        transform: scale(1);
     }
     50% {
-        transform: translateX(-100% - 150px) scale(1.15);
-    }
-}
-
-@keyframes breath-next {
-    0%, 100% {
-        transform: translateX(150px) scale(1);
-    }
-    50% {
-        transform: translateX(150px) scale(1.15);
+        transform: scale(1.15);
     }
 }
