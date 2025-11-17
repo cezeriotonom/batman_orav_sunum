@@ -306,37 +306,45 @@ section.active .animated-text:nth-child(4) { /* third column */
 .final-slide { background-color: transparent; border: none; backdrop-filter: none; }
 .final-logo { font-size: 8vw; text-align: center; }
 .typing-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center; /* Use text-align instead of flexbox to prevent conflicts */
     margin-top: 20px;
 }
 .typing-animation {
     font-size: 2vw;
     color: #ccd6f6;
-    position: relative;
-    width: max-content;
-    max-width: 0ch;
+    display: inline-block; /* Crucial for width animation to work correctly */
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid transparent; /* Default transparent cursor */
+    width: 0; /* Start with 0 width */
+    border-right: .15em solid #64ffda; /* The cursor */
+    margin: 10px 0;
+    vertical-align: bottom;
 }
 
-section.active .typing-animation:nth-child(1) {
-    animation: typing 3s steps(34) 1s forwards, blink 0.75s 1s step-end 4;
-}
-section.active .typing-animation:nth-child(2) {
-    animation: typing 2.5s steps(29) 4.5s forwards, blink 0.75s 4.5s step-end 4;
-}
-section.active .typing-animation:nth-child(3) {
-    animation: typing 2.5s steps(29) 7.5s forwards, blink 0.75s 7.5s step-end infinite;
-}
+/* --- Animation Definitions --- */
+@keyframes typing-line1 { to { width: 34ch; } }
+@keyframes typing-line2 { to { width: 29ch; } }
+@keyframes typing-line3 { to { width: 29ch; } }
 
-@keyframes typing {
-    to { max-width: 100ch; }
-}
-@keyframes blink {
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
     50% { border-color: #64ffda; }
+}
+
+/* --- Animation Application --- */
+section.active .typing-animation:nth-child(1) {
+    animation: typing-line1 3s steps(34) 1s forwards,
+               blink-caret 0.75s step-end 1s 4;
+}
+
+section.active .typing-animation:nth-child(2) {
+    animation: typing-line2 2.5s steps(29) 4.5s forwards,
+               blink-caret 0.75s step-end 4.5s 4;
+}
+
+section.active .typing-animation:nth-child(3) {
+    animation: typing-line3 2.5s steps(29) 7.5s forwards,
+               blink-caret 0.75s step-end 7.5s infinite;
 }
 
 @keyframes typing {
