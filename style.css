@@ -164,12 +164,53 @@ section.active .animated-text {
     border-radius: 8px; /* Optional: slightly rounded corners for a softer look */
 }
 
-/* Stagger the animation for a more elegant effect */
-/* Logo (1st child) gets 0s delay by default */
-section.active .animated-text:nth-child(2) { /* H1 */
-    animation-delay: 0.3s;
+/* --- Columns Layout --- */
+.columns-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 60px;
 }
 
-section.active .animated-text:nth-child(3) { /* H2 */
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+}
+
+.column i {
+    font-size: 5vw;
+    margin-bottom: 20px;
+    color: #ccd6f6;
+}
+
+.column-text {
+    font-size: 1.5vw;
+    color: #E0E0E0;
+}
+
+/* Stagger the animation for a more elegant effect */
+section.active .animated-text:nth-child(1) { /* Logo or H1 */
+    animation-delay: 0.1s;
+}
+section.active .animated-text:nth-child(2) { /* H1 or first column */
+    animation-delay: 0.3s;
+}
+section.active .animated-text:nth-child(3) { /* H2 or second column */
+    animation-delay: 0.5s;
+}
+section.active .animated-text:nth-child(4) { /* third column */
+    animation-delay: 0.7s;
+}
+
+/* Specific delays for the columns inside their container */
+section.active .columns-container .column:nth-child(1) {
+    animation-delay: 0.4s;
+}
+section.active .columns-container .column:nth-child(2) {
     animation-delay: 0.6s;
+}
+section.active .columns-container .column:nth-child(3) {
+    animation-delay: 0.8s;
 }
