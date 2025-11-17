@@ -38,22 +38,77 @@ h1 {
 .nav-arrow {
     position: fixed;
     bottom: 30px;
-    font-size: 3rem;
-    color: rgba(204, 214, 246, 0.5);
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(204, 214, 246, 0.5);
+    border-radius: 50%;
     cursor: pointer;
     z-index: 100;
-    user-select: none; /* Prevent text selection */
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-arrow:hover {
-    color: rgba(204, 214, 246, 1);
+    border-color: rgba(204, 214, 246, 1);
+    background-color: rgba(204, 214, 246, 0.1);
+}
+
+.nav-arrow::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid rgba(204, 214, 246, 0.8);
+    border-right: 2px solid rgba(204, 214, 246, 0.8);
+    transition: border-color 0.3s ease;
+}
+
+.nav-arrow:hover::before {
+    border-color: rgba(204, 214, 246, 1);
 }
 
 #prev-arrow {
-    left: 40px;
+    left: 50%;
+    transform: translateX(-100% - 10px); 
+}
+
+#prev-arrow:hover {
+    animation: breath-prev 1.8s infinite ease-in-out;
+}
+
+#prev-arrow::before {
+    transform: translateX(2px) rotate(-135deg);
 }
 
 #next-arrow {
-    right: 40px;
+    left: 50%;
+    transform: translateX(10px);
+}
+
+#next-arrow:hover {
+    animation: breath-next 1.8s infinite ease-in-out;
+}
+
+#next-arrow::before {
+    transform: translateX(-2px) rotate(45deg);
+}
+
+@keyframes breath-prev {
+    0%, 100% {
+        transform: translateX(-100% - 10px) scale(1);
+    }
+    50% {
+        transform: translateX(-100% - 10px) scale(1.15);
+    }
+}
+
+@keyframes breath-next {
+    0%, 100% {
+        transform: translateX(10px) scale(1);
+    }
+    50% {
+        transform: translateX(10px) scale(1.15);
+    }
 }
