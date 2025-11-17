@@ -132,3 +132,31 @@ p {
         transform: scale(1.15);
     }
 }
+
+/* --- Text Animation --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    opacity: 0; /* Initially hidden */
+}
+
+section.active .animated-text {
+    animation-name: fadeInUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards; /* Keep the final state */
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Stagger the animation for a more elegant effect */
+section.active .animated-text:nth-child(2) {
+    animation-delay: 0.3s;
+}
