@@ -207,7 +207,9 @@ section.active .animated-text:nth-child(4) { /* third column */
 /* --- Slide 3: Biz Kimiz? --- */
 .team-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 50px; /* Row and column gap */
     width: 100%;
     margin-top: 40px;
 }
@@ -215,14 +217,16 @@ section.active .animated-text:nth-child(4) { /* third column */
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: 200px; /* Give a base width to each member */
 }
 .photo-placeholder {
     width: 150px;
     height: 150px;
     background-color: rgba(204, 214, 246, 0.1);
-    border: 2px dashed rgba(204, 214, 246, 0.5);
+    border: 2px solid rgba(204, 214, 246, 0.5);
     border-radius: 50%;
     margin-bottom: 15px;
+    object-fit: cover; /* Ensures images fit perfectly */
 }
 .mission-statement {
     font-style: italic;
@@ -332,3 +336,6 @@ section.active .animated-text:nth-child(4) { animation-delay: 1.1s; }
 section.active .team-container .animated-text:nth-child(1) { animation-delay: 0.5s; }
 section.active .team-container .animated-text:nth-child(2) { animation-delay: 0.7s; }
 section.active .team-container .animated-text:nth-child(3) { animation-delay: 0.9s; }
+section.active .team-container .animated-text:nth-child(4) { animation-delay: 1.1s; }
+section.active .team-container .animated-text:nth-child(5) { animation-delay: 1.3s; }
+section.active .mission-statement { animation-delay: 1.6s; }
