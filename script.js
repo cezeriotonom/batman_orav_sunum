@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-            ctx.fillStyle = '#c0c0c0';
+            ctx.fillStyle = 'rgba(192, 192, 192, 0.2)'; // Fainter particles
             ctx.fill();
         }
         update() {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
                 if (distance < (canvas.width/7) * (canvas.height/7)) {
                     opacityValue = 1 - (distance/20000);
-                    ctx.strokeStyle='rgba(192,192,192,' + opacityValue + ')';
+                    ctx.strokeStyle='rgba(192,192,192,' + (opacityValue * 0.15) + ')'; // Fainter lines
                     ctx.lineWidth = 1;
                     ctx.beginPath();
                     ctx.moveTo(particlesArray[a].x, particlesArray[a].y);

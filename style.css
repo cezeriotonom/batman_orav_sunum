@@ -41,6 +41,16 @@ section.active {
     visibility: visible;
 }
 
+.content-panel {
+    background-color: rgba(10, 25, 47, 0.75);
+    padding: 40px 60px;
+    border-radius: 15px;
+    border: 1px solid rgba(204, 214, 246, 0.1);
+    max-width: 80%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
 h1 {
     font-size: 5vw;
     font-weight: 700;
