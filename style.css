@@ -312,11 +312,11 @@ section.active .animated-text:nth-child(4) { /* third column */
 .typing-animation {
     font-size: 2vw;
     color: #ccd6f6;
-    display: inline-block; /* Crucial for width animation to work correctly */
+    display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    width: 0; /* Start with 0 width */
-    border-right: .15em solid #64ffda; /* The cursor */
+    width: 0;
+    border-right: .15em solid transparent; /* Cursor is transparent by default */
     margin: 10px 0;
     vertical-align: bottom;
 }
@@ -332,19 +332,20 @@ section.active .animated-text:nth-child(4) { /* third column */
 }
 
 /* --- Animation Application --- */
+/* Each line's animation is timed to start after the previous one finishes */
 section.active .typing-animation:nth-child(1) {
     animation: typing-line1 3s steps(34) 1s forwards,
-               blink-caret 0.75s step-end 1s 4;
+               blink-caret 0.75s step-end 1s 4; /* Blinks 4 times, then stops */
 }
 
 section.active .typing-animation:nth-child(2) {
     animation: typing-line2 2.5s steps(29) 4.5s forwards,
-               blink-caret 0.75s step-end 4.5s 4;
+               blink-caret 0.75s step-end 4.5s 4; /* Blinks 4 times, then stops */
 }
 
 section.active .typing-animation:nth-child(3) {
-    animation: typing-line3 2.5s steps(29) 7.5s forwards,
-               blink-caret 0.75s step-end 7.5s infinite;
+    animation: typing-line3 2.5s steps(29) 8s forwards,
+               blink-caret 0.75s step-end 8s infinite; /* Blinks indefinitely */
 }
 
 @keyframes typing {
