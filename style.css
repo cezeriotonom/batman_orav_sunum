@@ -295,6 +295,8 @@ section.active .animated-text:nth-child(4) { /* third column */
     background-color: white;
     border-radius: 20px;
     margin-top: 40px;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
     display: flex;
     align-items: center;
     justify-content: center;
