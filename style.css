@@ -34,3 +34,26 @@ section.active {
 h1 {
     font-size: 4rem;
 }
+
+.nav-arrow {
+    position: fixed;
+    bottom: 30px;
+    font-size: 3rem;
+    color: rgba(204, 214, 246, 0.5);
+    cursor: pointer;
+    z-index: 100;
+    user-select: none; /* Prevent text selection */
+    transition: color 0.3s ease;
+}
+
+.nav-arrow:hover {
+    color: rgba(204, 214, 246, 1);
+}
+
+#prev-arrow {
+    left: 40px;
+}
+
+#next-arrow {
+    right: 40px;
+}
