@@ -2,11 +2,11 @@
   "project_id" : 865,
   "project_name" : "batman_orav_sunum",
   "language" : "WEB",
-  "ai_chat_id" : "13oiEVeIFrYaO7MZXl_DPqI9_k2vEkMzt",
+  "ai_chat_id" : "1kV5VGAskfNyzHzFquRoj7jFZXuNNB0dQ",
   "symdev_account_email" : "cezeriotonom@gmail.com",
-  "llm_account_email" : "symdev.free@gmail.com",
-  "github_repo_url" : "https://github.com/cezeriotonom/batman_orav_sunum.git",
+  "llm_account_email" : "symdev.pro@gmail.com",
+  "github_repo_url" : null,
   "build_command" : null,
   "run_command" : null,
-  "open_browser_url" : "file:///C:/Users/Teknofest/SymDev_Projects/batman_orav_sunum/index.html"
+  "open_browser_url" : null
 }
